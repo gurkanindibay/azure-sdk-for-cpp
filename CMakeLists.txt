@@ -26,6 +26,7 @@ az_vcpkg_integrate()
 project(azure-sdk LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS -ansi )
 
 if(MSVC_USE_STATIC_CRT AND MSVC)
   # 1. More about static/shared CRT:
